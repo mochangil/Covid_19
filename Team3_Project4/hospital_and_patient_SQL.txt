@@ -1,0 +1,23 @@
+//HOSPITAL TABLE 생성
+create table HOSPITAL(
+hospital_id int,
+Hospital_name varchar(100), 
+Hospital_province varchar(50),
+Hospital_city varchar(50),
+Hospital_latitude float,
+Hospital_longitude float,
+capacity int,
+now int,
+primary key (hospital_id));
+
+
+//hospital data insert(parsing_hospital.py)
+
+
+//PATIENTINFO TABLE에 HOSPITAL_ID 컬럼 추가
+alter table patientinfo add hospital_id int;
+
+
+//patient에 hid insert (Patient_hospital.py)
+
+

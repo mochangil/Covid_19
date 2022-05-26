@@ -1,0 +1,6 @@
+--index 생성
+CREATE INDEX idx_con_pr_ci
+ON PATIENTINFO(country,province,city);
+
+--비교구문(전,후)
+EXPLAIN SELECT * FROM PATIENTINFO WHERE country="Korea" and province="Seoul" and city="Eunpyeong-gu";
